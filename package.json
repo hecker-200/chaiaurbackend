@@ -1,19 +1,28 @@
 {
   "name": "chai-aur-backend",
   "version": "1.0.0",
-  "description": "backend final try",
-  "keywords": [
-    "backend"
-  ],
+  "description": "this is my final try to learn backend with js",
+  "homepage": "https://github.com/hecker-200/chaiaurbackend#readme",
+  "bugs": {
+    "url": "https://github.com/hecker-200/chaiaurbackend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hecker-200/chaiaurbackend.git"
+  },
   "license": "ISC",
   "author": "",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "dependencies": {
-    "nodemon": "^3.1.10"
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.2",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
   }
 }
